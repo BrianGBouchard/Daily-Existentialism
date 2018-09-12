@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="parser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op5-Fm-Haz">
+                                <rect key="frame" x="16" y="90" width="343" height="268"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="STy-To-T8a">
+                                <rect key="frame" x="155" y="420" width="66" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Curious?">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNy-ig-sA0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-Re-KUP">
+                                <rect key="frame" x="81.5" y="444" width="213" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Click here for further reading">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOx-8X-BUo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A daily thought to ponder while you're waiting for Godot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25E-Dy-XYX">
+                                <rect key="frame" x="20" y="29.5" width="335.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88351896911843353" green="1" blue="0.82186312447573862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="STy-To-T8a" firstAttribute="centerX" secondItem="xBk-Re-KUP" secondAttribute="centerX" id="5LR-nY-LQf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xBk-Re-KUP" secondAttribute="trailing" constant="80.5" id="5ky-p0-R1o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="STy-To-T8a" secondAttribute="trailing" constant="154" id="809-YD-AKz"/>
+                            <constraint firstItem="xBk-Re-KUP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81.5" id="9NQ-hP-DjS"/>
+                            <constraint firstItem="op5-Fm-Haz" firstAttribute="top" secondItem="25E-Dy-XYX" secondAttribute="bottom" constant="40" id="CBe-p8-8EA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="op5-Fm-Haz" secondAttribute="trailing" constant="16" id="CLw-Fk-OwB"/>
+                            <constraint firstItem="op5-Fm-Haz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SVU-Rx-mBB"/>
+                            <constraint firstItem="STy-To-T8a" firstAttribute="top" secondItem="op5-Fm-Haz" secondAttribute="bottom" constant="62" id="bhj-M4-zey"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xBk-Re-KUP" secondAttribute="bottom" constant="193" id="bnQ-5P-um8"/>
+                            <constraint firstItem="25E-Dy-XYX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="exj-uj-oat"/>
+                            <constraint firstItem="25E-Dy-XYX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9.5" id="fnY-hn-eaR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="op5-Fm-Haz" secondAttribute="bottom" constant="309" id="g3f-w6-Hwd"/>
+                            <constraint firstItem="xBk-Re-KUP" firstAttribute="top" secondItem="STy-To-T8a" secondAttribute="bottom" constant="-6" id="jhW-U8-Tjt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="25E-Dy-XYX" secondAttribute="trailing" constant="19.5" id="nzj-PG-f5O"/>
+                            <constraint firstItem="op5-Fm-Haz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="uML-sL-vxt"/>
+                            <constraint firstItem="STy-To-T8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="xQk-SH-AVk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="quoteLabel" destination="op5-Fm-Haz" id="wfJ-ea-vGQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="96.7016491754123"/>
+        </scene>
+    </scenes>
+</document>
